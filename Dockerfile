@@ -9,6 +9,7 @@ COPY package*.json ./
 
 # Install app dependencies
 RUN npm install --production
+RUN npm install -D tailwindcss postcss autoprefixer
 
 # Copy the rest of the application code
 COPY . .
