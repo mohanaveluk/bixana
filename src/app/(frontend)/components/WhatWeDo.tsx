@@ -56,7 +56,7 @@ const services = [
   {
     title: "Affordable Prices",
     description:
-      "We offer comparative price range and free service to make you comfortable working with this bixana application.",
+      "We offer comparative price range and free service to make you comfortable working with this Toothfairy application.",
     imageSrc: CARD_IMG_2,
   },
   {
