@@ -47,9 +47,9 @@ export default function TermsPage() {
             >
               Welcome to Toothfairy! These Terms of Service (&quot;Terms&quot;)
               govern your access to and use of our cloud-based dental practice
-              platform (&quot;Service&quot;) provided by Bixana Inc.
+              platform (&quot;Service&quot;) provided by Toothfairy Inc.
               (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). By using
-              Bixana, you agree to be bound by these Terms.
+              Toothfairy, you agree to be bound by these Terms.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function TermsPage() {
                 className="text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em] mb-3"
                 style={{ fontFamily: "Inter Tight", fontWeight: 300 }}
               >
-                Bixana offers a digital platform for:
+                Toothfairy offers a digital platform for:
               </p>
               <ul className="list-disc list-inside space-y-1.5 text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em] ml-4">
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
@@ -191,7 +191,7 @@ export default function TermsPage() {
               </p>
               <ul className="list-disc list-inside space-y-1.5 text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em] ml-4">
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
-                  Use Bixana for illegal or unauthorized purposes
+                  Use Toothfairy for illegal or unauthorized purposes
                 </li>
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
                   Reverse engineer or attempt to access the source code

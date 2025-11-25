@@ -47,7 +47,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
 }) => (
   <div
     ref={ref}
-    className={`benefit-card flex flex-col gap-8 xl:gap-6 bg-[#F8F9FA] rounded-[40px] p-4 xl:p-3 justify-center items-center text-center border border-[#C1C1C1] transition-all duration-300 group cursor-pointer relative overflow-visible z-10 hover:z-[100] ${className || ""}`}
+    className={`benefit-card flex flex-col gap-8 xl:gap-6 bg-[#F8F9FA] rounded-[40px] p-4 xl:p-3 justify-center items-center text-center border border-[#C1C1C1] transition-all duration-300 group cursor-pointer relative overflow-hidden z-10 hover:z-[100] ${className || ""}`}
     style={style}
     data-gsap={dataGsap}
   >
@@ -55,53 +55,51 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
     <div className="benefit-white-div-1 absolute inset-y-0 right-0 w-1/2 bg-white rounded-r-[40px] rounded-l-none transform origin-center z-10"></div>
     <div className="benefit-white-div-2 absolute inset-y-0 left-0 w-1/2 bg-white rounded-l-[40px] rounded-r-none transform origin-center z-10"></div>
 
-    <div className="benefit-icon w-[78px] h-[78px] xl:w-[62px] xl:h-[62px] rounded-full flex items-center justify-center relative z-10">
-      {typeof icon === "string" ? (
-        <Image
-          src={icon}
-          alt={title}
-          width={48}
-          height={48}
-          className="object-contain"
+    <div className="relative w-full flex-1 flex items-center justify-center">
+      {/* Primary content (icon + title) */}
+      <div className="benefit-primary absolute inset-0 flex flex-col items-center justify-center gap-6 px-6 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-3 group-hover:scale-95 z-20">
+        <div className="benefit-icon w-[78px] h-[78px] xl:w-[62px] xl:h-[62px] rounded-full flex items-center justify-center mx-auto">
+          {typeof icon === "string" ? (
+            <Image
+              src={icon}
+              alt={title}
+              width={48}
+              height={48}
+              className="object-contain"
+            />
+          ) : (
+            icon
+          )}
+        </div>
+
+        <h3
+          className="benefit-text text-[28px] xl:text-[22px]"
+          style={{
+            fontFamily: "Inter Tight",
+            fontWeight: 300,
+            lineHeight: "1.5",
+            letterSpacing: "-0.04em",
+            color: "#000",
+            margin: 0,
+          }}
+          dangerouslySetInnerHTML={{ __html: title }}
         />
-      ) : (
-        icon
+      </div>
+
+      {/* Tooltip content fills entire card on hover */}
+      {tooltip && (
+        <div
+          className="benefit-tooltip absolute inset-0 flex flex-col items-center justify-center text-[14px] xl:text-[13px] text-[#0A0F29] leading-[1.6] font-normal px-6 opacity-0 translate-y-4 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 bg-white/95 backdrop-blur-sm rounded-[32px] z-30"
+          style={{
+            fontFamily: "Inter Tight",
+            fontWeight: 400,
+            fontSize: "16px",
+          }}
+        >
+          {tooltip}
+        </div>
       )}
     </div>
-
-    <h3
-      className="benefit-text relative z-10 text-[28px] xl:text-[22px]"
-      style={{
-        fontFamily: "Inter Tight",
-        fontWeight: 300,
-        lineHeight: "1.5",
-        letterSpacing: "-0.04em",
-        color: "#000",
-        margin: 0,
-      }}
-      dangerouslySetInnerHTML={{ __html: title }}
-    />
-
-    {/* Tooltip */}
-    {tooltip && (
-      <div
-        className="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 w-[280px] xl:w-[320px] bg-[#0A0F29] text-white text-xs xl:text-sm rounded-lg p-3 xl:p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[9999] pointer-events-none shadow-lg"
-        style={{
-          fontFamily: "Inter Tight",
-          fontWeight: 300,
-          lineHeight: "1.5",
-          position: "absolute",
-        }}
-      >
-        <div className="relative">
-          {tooltip}
-          {/* Tooltip arrow pointing left */}
-          <div className="absolute right-full top-1/2 transform -translate-y-1/2">
-            <div className="w-0 h-0 border-t-4 border-b-4 border-r-4 border-transparent border-r-[#0A0F29]"></div>
-          </div>
-        </div>
-      </div>
-    )}
   </div>
 );
 
@@ -149,6 +147,7 @@ const createCardAnimation = (
 
   // Set initial state
   gsap.set([iconElement, textElement], { opacity: 0 });
+  // Tooltip remains hidden - only shows on hover via CSS
 
   if (whiteDiv1 && whiteDiv2) {
     gsap.set([whiteDiv1, whiteDiv2], {
