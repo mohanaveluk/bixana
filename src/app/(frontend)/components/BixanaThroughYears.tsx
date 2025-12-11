@@ -106,11 +106,12 @@ export default function BixanaThroughYears() {
                   fontFamily: "Inter Tight",
                 }}
               >
-                At Toothfairy, our numbers reflect the impact we create for
-                dental practices. From the growing number of clinics we support
-                to the efficiency gains our solutions deliver, each statistic
-                represents our commitment to innovation, seamless workflows, and
-                exceptional patient care.
+                At Toothfairy, our numbers reflect the real impact we deliver
+                for dental practices. From boosting patient flow to improving
+                treatment acceptance and driving measurable ROI, each result
+                demonstrates the power of our AI-driven tools to streamline
+                operations, elevate patient engagement, and help clinics grow
+                with confidence.
               </p>
             </div>
 
@@ -127,7 +128,7 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    Completed Projects
+                    Return on Investment
                   </span>
                   <span
                     className="text-black text-[40px]"
@@ -137,7 +138,7 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    100%
+                    6x
                   </span>
                 </div>
               </div>
@@ -153,7 +154,7 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    Customer Satisfaction
+                    More New Patients
                   </span>
                   <span
                     className="text-black text-[40px]"
@@ -163,7 +164,7 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    253+
+                    40%
                   </span>
                 </div>
               </div>
@@ -179,7 +180,7 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    Expert Support Team
+                    Higher Case Acceptance
                   </span>
                   <span
                     className="text-black text-[40px]"
@@ -189,13 +190,13 @@ export default function BixanaThroughYears() {
                       fontFamily: "Inter Tight",
                     }}
                   >
-                    24h
+                    45%
                   </span>
                 </div>
               </div>
 
               {/* Sales In Count Card */}
-              <div className="bg-white border border-[#E5E7EB] rounded-[16px] p-6 w-full">
+              {/* <div className="bg-white border border-[#E5E7EB] rounded-[16px] p-6 w-full">
                 <div className="flex items-center justify-between">
                   <span
                     className="text-[#0A0F29] text-[18px]"
@@ -218,7 +219,7 @@ export default function BixanaThroughYears() {
                     78k
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         ) : (
@@ -268,11 +269,12 @@ export default function BixanaThroughYears() {
                     fontFamily: "Inter Tight",
                   }}
                 >
-                  At Toothfairy, our numbers reflect the impact we create for
-                  dental practices. From the growing number of clinics we
-                  support to the efficiency gains our solutions deliver, each
-                  statistic represents our commitment to innovation, seamless
-                  workflows, and exceptional patient care.
+                  At Toothfairy, our numbers reflect the real impact we deliver
+                  for dental practices. From boosting patient flow to improving
+                  treatment acceptance and driving measurable ROI, each result
+                  demonstrates the power of our AI-driven tools to streamline
+                  operations, elevate patient engagement, and help clinics grow
+                  with confidence.
                 </p>
               </div>
             </div>
@@ -281,93 +283,146 @@ export default function BixanaThroughYears() {
             <div className="flex-1 w-full">
               <ul className="divide-y divide-[#E5E7EB]">
                 <li className="flex items-center justify-between py-4">
-                  <span
-                    className="text-[#0A0F29] font-['Helvetica_Neue']"
-                    style={{
-                      fontWeight: 300,
-                      fontSize: 22,
-                      letterSpacing: "-0.02em",
-                    }}
-                  >
-                    Completed Projects
-                  </span>
+                  <div className="flex flex-col gap-2">
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 400,
+                        fontSize: 22,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                      }}
+                    >
+                      Return on Investment
+                    </span>
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 300,
+                        fontSize: 16,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                        // width: "350px",
+                      }}
+                    >
+                      Clinics achieve 4-6x ROI within 12 months of using
+                      Toothfairy AI.
+                    </span>
+                  </div>
                   <span
                     ref={(el) => {
                       valueRefs.current[0] = el;
                     }}
-                    data-value="100"
-                    data-suffix="%"
-                    className="text-black font-['Helvetica_Neue']"
+                    data-value="6"
+                    data-suffix="x"
+                    className="text-black"
                     style={{
                       fontWeight: 300,
                       fontSize: 56,
                       letterSpacing: "-0.02em",
+                      fontFamily: "Inter Tight",
+                    }}
+                  >
+                    0x
+                  </span>
+                </li>
+                <li className="flex items-center justify-between py-4">
+                  <div className="flex flex-col gap-2">
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 400,
+                        fontSize: 22,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                      }}
+                    >
+                      More New Patients
+                    </span>
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 300,
+                        fontSize: 16,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                        // width: "350px",
+                      }}
+                    >
+                      AI Powered reviews, scheduling and lead capture increase
+                      patients flow.
+                    </span>
+                  </div>
+                  <span
+                    ref={(el) => {
+                      valueRefs.current[1] = el;
+                    }}
+                    data-value="40"
+                    data-suffix="%"
+                    className="text-black"
+                    style={{
+                      fontWeight: 300,
+                      fontSize: 56,
+                      letterSpacing: "-0.02em",
+                      fontFamily: "Inter Tight",
                     }}
                   >
                     0%
                   </span>
                 </li>
                 <li className="flex items-center justify-between py-4">
-                  <span
-                    className="text-[#0A0F29] font-['Helvetica_Neue']"
-                    style={{
-                      fontWeight: 300,
-                      fontSize: 22,
-                      letterSpacing: "-0.02em",
-                    }}
-                  >
-                    Customer Satisfaction
-                  </span>
-                  <span
-                    ref={(el) => {
-                      valueRefs.current[1] = el;
-                    }}
-                    data-value="253"
-                    data-suffix="+"
-                    className="text-black font-['Helvetica_Neue']"
-                    style={{
-                      fontWeight: 300,
-                      fontSize: 56,
-                      letterSpacing: "-0.02em",
-                    }}
-                  >
-                    0+
-                  </span>
-                </li>
-                <li className="flex items-center justify-between py-4">
-                  <span
-                    className="text-[#0A0F29] font-['Helvetica_Neue']"
-                    style={{
-                      fontWeight: 300,
-                      fontSize: 22,
-                      letterSpacing: "-0.02em",
-                    }}
-                  >
-                    Expert Support Team
-                  </span>
+                  <div className="flex flex-col gap-2">
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 400,
+                        fontSize: 22,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                      }}
+                    >
+                      Higher Case Acceptance
+                    </span>
+                    <span
+                      className="text-[#0A0F29]"
+                      style={{
+                        fontWeight: 300,
+                        fontSize: 16,
+                        letterSpacing: "-0.02em",
+                        fontFamily: "Inter Tight",
+                        // width: "350px",
+                      }}
+                    >
+                      Automated follow-ups and financing options boost treatment
+                      conversions.
+                    </span>
+                  </div>
+
                   <span
                     ref={(el) => {
                       valueRefs.current[2] = el;
                     }}
-                    data-value="24"
-                    data-suffix="h"
-                    className="text-black font-['Helvetica_Neue']"
+                    data-value="45"
+                    data-suffix="%"
+                    className="text-black"
                     style={{
                       fontWeight: 300,
                       fontSize: 56,
                       letterSpacing: "-0.02em",
+                      fontFamily: "Inter Tight",
                     }}
                   >
-                    0h
+                    0%
                   </span>
                 </li>
-                <li className="flex items-center justify-between py-4">
+                {/* <li className="flex items-center justify-between py-4">
                   <span
-                    className="text-[#0A0F29] font-['Helvetica_Neue']"
+                    className="text-[#0A0F29]"
                     style={{
                       fontWeight: 300,
                       fontSize: 22,
                       letterSpacing: "-0.02em",
+                      fontFamily: "Inter Tight",
                     }}
                   >
                     Sales In Count
@@ -378,16 +433,17 @@ export default function BixanaThroughYears() {
                     }}
                     data-value="78"
                     data-suffix="k"
-                    className="text-black font-['Helvetica_Neue']"
+                    className="text-black"
                     style={{
                       fontWeight: 300,
                       fontSize: 56,
                       letterSpacing: "-0.02em",
+                      fontFamily: "Inter Tight",
                     }}
                   >
                     0k
                   </span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

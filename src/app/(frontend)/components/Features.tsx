@@ -231,14 +231,15 @@ export default function Features() {
                     </p>
 
                     {/* Image - mobile landscape crop */}
-                    <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden border border-white/10">
-                      <Image
-                        src={feature.image}
-                        alt={feature.title}
-                        fill
-                        className="object-contain object-center"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden border border-white/10 p-4">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={feature.image}
+                          alt={feature.title}
+                          fill
+                          className="object-fill rounded-[8px]"
+                        />
+                      </div>
                     </div>
 
                     {/* CTA Button */}

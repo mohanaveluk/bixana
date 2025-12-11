@@ -135,7 +135,7 @@ const ContactHero = () => {
                 </div>
               }
               title="Email"
-              content="contact@bixana.com"
+              content="contact@toothfairyhealth.ai"
             />
           </div>
 
@@ -228,7 +228,7 @@ const ContactHero = () => {
                 </div>
               }
               title="Email"
-              content="contact@bixana.com"
+              content="contact@toothfairyhealth.ai"
               width="w-full"
             />
 

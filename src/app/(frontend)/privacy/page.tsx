@@ -62,7 +62,7 @@ export default function PrivacyPage() {
                     className="text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em]"
                     style={{ fontFamily: "Inter Tight", fontWeight: 300 }}
                   >
-                    When you register or use Bixana, we collect:
+                    When you register or use Toothfairy, we collect:
                   </p>
                   <ul className="list-disc list-inside mt-2 space-y-1.5 text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em] ml-4">
                     <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
@@ -187,7 +187,7 @@ export default function PrivacyPage() {
                   When required by law or legal process
                 </li>
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
-                  To protect Bixana&apos;s rights or prevent fraud
+                  To protect Toothfairy&apos;s rights or prevent fraud
                 </li>
               </ul>
             </div>
@@ -202,7 +202,7 @@ export default function PrivacyPage() {
               </h2>
               <ul className="list-disc list-inside space-y-1.5 text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em] ml-4">
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
-                  Bixana is designed with HIPAA-compliant features and
+                  Toothfairy is designed with HIPAA-compliant features and
                   encryption standards.
                 </li>
                 <li style={{ fontFamily: "Inter Tight", fontWeight: 300 }}>
@@ -273,8 +273,8 @@ export default function PrivacyPage() {
                 className="text-[#585858] text-[16px] sm:text-[18px] leading-[1.6] tracking-[-0.02em]"
                 style={{ fontFamily: "Inter Tight", fontWeight: 300 }}
               >
-                Bixana is not intended for use by individuals under 18 without
-                proper authorization.
+                Toothfairy is not intended for use by individuals under 18
+                without proper authorization.
               </p>
             </div>
 

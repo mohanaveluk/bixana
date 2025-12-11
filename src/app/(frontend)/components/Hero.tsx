@@ -114,7 +114,7 @@ export default function Hero({
             src="/hero/homepagehero.jpg"
             alt="Hero"
             fill
-            className="object-cover lg:object-fill"
+            className="object-cover lg:object-cover"
           />
 
           {/* Content container matching Figma layout */}
